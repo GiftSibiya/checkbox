@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class StoriesWidget extends StatelessWidget {
   StoriesWidget({super.key, required this.index});
 

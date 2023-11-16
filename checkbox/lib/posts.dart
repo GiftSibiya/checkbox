@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class PostsWidget extends StatelessWidget {
   PostsWidget({super.key, required this.index});
   int index;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 300,
       width: 20,
       child: Column(
