@@ -1,4 +1,5 @@
 import 'package:checkbox/discover.dart';
+import 'package:checkbox/grids/gridpage.dart';
 import 'package:checkbox/posts.dart';
 import 'package:checkbox/stories.dart';
 import 'package:flutter/material.dart';
@@ -90,9 +91,18 @@ class _MainScreenState extends State<MainScreen> {
               );
             },
           ),
-          const Icon(
-            Icons.video_collection_outlined,
-            size: 35,
+          IconButton(
+            icon: Icon(
+              Icons.video_collection_outlined,
+              size: 35,
+            ),
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => GridPage(),
+                  ));
+            },
           ),
           const Icon(
             Icons.favorite_outline,
